@@ -45,7 +45,7 @@ document.getElementById('projectForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const form = e.target;
   const data = Object.fromEntries(new FormData(form));
-  fetch("https://script.google.com/macros/s/AKfycbwcTIQFBqhFRaU_G0rv-ygR43uJD2r8N965TF_h5IHtJsQ_HOFicGu2ud9YExxhBjfXGQ/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbywngMyMwKpM3Xv9QhC5bFpMDdLf--7e-ALAmYCzyPxZ-DOWVyYsmGOa4qydBfB_yrOcQ/exec", {
     method: "POST",
     body: JSON.stringify(data),
     headers: { "Content-Type": "application/json" }
